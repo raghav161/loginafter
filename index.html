@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">CENTRAL BANK OF <span>THAPAR</span></a>
+            <ul class="navbar">
+                <li><a href="#home" onclick="opentab('ho')">ACCOUNTS</a></li>
+                <li><a href="#cars" onclick="opentab('car')">LOAN</a></li>
+                <li><a href="#about" onclick="opentab('ab')">INSURANCE</a></li>
+                <li><a href="#parts" onclick="opentab('pa')">CARDS</a></li>
+            </ul>
+
+            <div class="search-box">
+                <i class='bx bx-search' id="search-icon"></i>
+                <input type="text" name="" id="searchbar" placeholder="Search here...">
+            </div>
+
+        </div>  
+
+        <div class="d activess" id="ho">
+            <h2>ACCOUNTS</h2>
+            <ul class="coll">
+                <li>
+                    Savings Account
+                </li>
+
+                <li>
+                    Current Account
+                </li>
+
+                <li>
+                    Salary Account
+                </li>
+
+                <li>
+                    Rural Account
+                </li>
+
+                <li>
+                    PPF Account
+                </li>
+            </ul>
+        </div>
+
+        <div class="d" id="car">
+            <h2>LOAN</h2>
+            <ul class="coll">
+                <li>
+                    Personal Loan
+                </li>
+
+                <li>
+                    car Loan
+                </li>
+
+                <li>
+                    Home Loan
+                </li>
+
+                <li>
+                    Education Loan
+                </li>
+
+                <li>
+                    Gold Loan
+                </li>
+
+                <li>
+                    EV Loan
+                </li>
+
+                <li>
+                    Business Loan
+                </li>
+            </ul>
+        </div>
+
+        <div class="d" id="ab">
+            <h2 style="margin-right: 180px;">INSURANCE</h2>
+            <ul class="coll">
+                <li>
+                    Life Insurance
+                </li>
+
+                <li>
+                    Health Insurance
+                </li>
+
+                <li>
+                    Vehicle Insurance
+                </li>
+
+                <li>
+                    Term Insurance
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="d" id="pa">
+            <h2>CARDS</h2>
+            <ul class="coll">
+                <li>
+                    Credit Card
+                </li>
+
+                <li>
+                    Debit Card
+                </li>
+
+                <li>
+                    Prepaid Card
+                </li>
+
+                <li>
+                    Forex Card
+                </li>
+
+                <li>
+                    Business Credit Card
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-btn");
+        var tabcontents=document.getElementsByClassName("d");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activess");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("activess");
+        }
+
+    </script>
+</body>
+</html>
