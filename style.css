@@ -18,21 +18,14 @@
 }
 
 img{
-    width: 100%;
+    width: 230px;
 }
 
 body{
     color: var(--text-color);
 }
 
-.container{
-    max-width: 1500px;
-    margin-left: 10%;
-}
 
-.bx-search{
-    margin-left: 200px;
-}
 
 header{
     display: block;
@@ -70,9 +63,9 @@ header{
 }
 
 .navbar{
-    margin-left: 5%;
     display: flex;
     column-gap: 1rem;
+    margin-left: 20px;
 }
 
 .navbar a{
@@ -92,8 +85,7 @@ header{
 }
 #searchbar{
     display: flex;
-    
-    width: 300px;
+    width: 200px;
     height: 30px;
 }
 
@@ -113,7 +105,6 @@ header{
     column-gap: 2rem;
     justify-content: center;
     margin-right: 200px;
-    
 }
 h2{
     text-align: center;
