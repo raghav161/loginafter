@@ -99,15 +99,23 @@ header{
     margin-top: 70px;
 }
 
-.coll
-{
+.coll{
     display: flex;
     column-gap: 2rem;
     justify-content: center;
     margin-right: 200px;
+    
 }
 h2{
     text-align: center;
     margin-right: 180px;
     margin-bottom: 20px;
+}
+
+.no{
+    color: black;
+}
+
+.coll a:hover{
+    color: var(--main-color);
 }
