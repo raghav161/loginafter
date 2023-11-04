@@ -33,147 +33,297 @@
             <h2>ACCOUNTS</h2>
             <ul class="coll">
                 <li>
-                    <a href="#home" class="no">Savings Account</a>
+                    <button class="tab-btn active" onclick="openopt('sav')">Savings Account</button>
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Current Account</a>
+                    <button class="tab-btn" onclick="openopt('cur')">Current Account</button>
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Salary Account</a>
+                    <button class="tab-btn" onclick="openopt('sal')">Salary Account</button>
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Rural Account</a>
+                    <button class="tab-btn" onclick="openopt('rur')">Rural Account</button>
+                    <a href="#home" class="no"></a>
                 </li>
 
                 <li>
-                    <a href="#home" class="no">PPF Account</a>
+                    <button class="tab-btn" onclick="openopt('ppf')">PPF Account</button>
                 </li>
             </ul>
+
+            <div class="details active" id="sav">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Savings <br> Account Number: 32417594852 </p>
+                </div>
+            </div>
+            <div class="details" id="cur">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Current <br> Account Number: 32417594412 </p>
+                </div>
+            </div>
+            <div class="details" id="sal">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Salary <br> Account Number: 32417123456 </p>
+                </div>
+            </div>
+            <div class="details" id="rur">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Rural <br> Account Number: 32417524562 </p>
+                </div>
+            </div>
+            <div class="details" id="ppf">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: PPF <br> Account Number: 32417594889 </p>
+                </div>
+            </div>
+
         </div>
 
         <div class="d" id="car">
             <h2>LOAN</h2>
             <ul class="coll">
                 <li>
-                    <a href="#home" class="no">Personal Loan</a>
+                    <button class="tab-btn active" onclick="openopt('per')">Personal Loan</button>                    
+                </li>
+
+                <li>
+                    <button class="tab-btn" onclick="openopt('carss')">Car Loan</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Car Loan</a>
+                    <button class="tab-btn" onclick="openopt('hom')">Home Loan</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Home Loan</a>
+                    <button class="tab-btn" onclick="openopt('edu')">Education Loan</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Education Loan</a>
+                    <button class="tab-btn" onclick="openopt('gol')">Gold Loan</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Gold Loan</a>
+                    <button class="tab-btn" onclick="openopt('ev')">EV Loan</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">EV Loan</a>
-                    
-                </li>
-
-                <li>
-                    <a href="#home" class="no">Business Loan</a>
+                    <button class="tab-btn" onclick="openopt('bus')">Business Loan</button>
                     
                 </li>
             </ul>
+
+            <div class="details active" id="per">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Loan <br> Account Number: 96364178321 <br> Status: Active</p>
+                </div>
+            </div>
+            <div class="details" id="carss">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Loan <br> Account Number: 32417594412 <br> Status: Active</p>
+                </div>
+            </div>
+            <div class="details" id="hom">
+                <div class="contentsofaccounts">
+                    <p>Account Type: Loan <br> Status: Inactive</p>
+                </div>
+            </div>
+            <div class="details" id="edu">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Loan <br> Account Number: 32417524562 <br> Status: Active</p>
+                </div>
+            </div>
+            <div class="details" id="gol">
+                <div class="contentsofaccounts">
+                    <p>Account Type: Loan <br> Status: Inactive</p>
+                </div>
+            </div>
+            <div class="details" id="ev">
+                <div class="contentsofaccounts">
+                    <p>Account Type: Loan <br> Status: Inactive</p>
+                </div>
+            </div>
+            <div class="details" id="bus">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Type: Loan <br> Account Number: 32417594889 <br> Status: Active</p>
+                </div>
+            </div>
         </div>
 
         <div class="d" id="ab">
             <h2 style="margin-right: 180px;">INSURANCE</h2>
             <ul class="coll">
                 <li>
-                    <a href="#home" class="no">Life Insurance</a>
+                    <button class="tab-btn active" onclick="openopt('life')">Life Insurance</button>                    
+                </li>
+
+                <li>
+                    <button class="tab-btn" onclick="openopt('heal')">Health Insurance</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Health Insurance</a>
+                    <button class="tab-btn" onclick="openopt('veh')">Vehicle Insurance</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Vehicle Insurance</a>
+                    <button class="tab-btn" onclick="openopt('term')">Term Insurance</button>
                     
                 </li>
-
-                <li>
-                    <a href="#home" class="no">Term Insurance</a>
-                    
-                </li>
-
             </ul>
+
+            <div class="details active" id="life">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Premium Type: Life <br> Status: Active <br>Premium Due: 5 Dec 2023
+                </div>
+            </div>
+            <div class="details" id="heal">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Premium Type: Health <br> Status: Active <br>Premium Due: 9 Dec 2023
+                </div>
+            </div>
+            <div class="details" id="veh">
+                <div class="contentsofaccounts">
+                    <p>Premium Type: Vehicle <br> Status: Inactive
+                </div>
+            </div> 
+            <div class="details" id="term">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Premium Type: Term <br> Status: Active <br>Premium Due: 17 Dec 2023
+                </div>
+            </div>
         </div>
 
         <div class="d" id="pa">
             <h2>CARDS</h2>
             <ul class="coll">
                 <li>
-                    <a href="#home" class="no">Credit Card</a>
-                   
+                    <button class="tab-btn active" onclick="openopt('cred')">Credit Card</button>                    
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Debit Card</a>
+                    <button class="tab-btn" onclick="openopt('deb')">Debit Card</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Prepaid Card</a>
+                    <button class="tab-btn" onclick="openopt('pre')">Prepaid Card</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Forex Card</a>
+                    <button class="tab-btn" onclick="openopt('fore')">Forex Card</button>
                     
                 </li>
 
                 <li>
-                    <a href="#home" class="no">Business Credit Card</a>
+                    <button class="tab-btn" onclick="openopt('busin')">Business Credit Card</button>
                     
                 </li>
             </ul>
+
+            <div class="details active" id="cred">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Card Type: Credit <br> Account Number: 32417524562 
+                </div>
+            </div>
+            <div class="details" id="deb">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Card Type: Debit <br> Account Number: 96364178321 
+                </div>
+            </div>
+            <div class="details" id="pre">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Card Type: Prepaid <br> Account Number: 32417123456 
+                </div>
+            </div> 
+            <div class="details" id="fore">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Card Type: Forex <br> Account Number: 32417524562 
+                </div>
+            </div>
+            <div class="details" id="busin">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Card Type: Business Credit <br> Account Number: 32417594889 
+                </div>
+            </div>
         </div>
 
         <div class="d" id="tr">
             <h2>TRANSACTION</h2>
             <ul class="coll">
-                
+                <li>
+                    <button class="tab-btn active" onclick="openopt('credd')">Credit</button>                    
+                </li>
+
+                <li>
+                    <button class="tab-btn" onclick="openopt('debd')">Debit</button>
+                    
+                </li>
+
+                <li>
+                    <button class="tab-btn" onclick="openopt('pred')">Transaction History</button>
+                    
+                </li>
             </ul>
+
+            <div class="details active" id="credd">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Number: 32417524589 
+                </div>
+            </div>
+            <div class="details" id="debd">
+                <div class="contentsofaccounts">
+                    <p>Name: Raghav Bansal <br> DOB: 24 May, 2003 <br> Account Number: 96364178354
+                </div>
+            </div>
+            <div class="details" id="pred">
+                <div class="contentsofaccounts">
+                    <a href="#" id="xx">Last 1 day Transaction</a>
+                    <a href="#" id="xx">Last 7 days Transaction</a>
+                    <a href="#" id="xx">Last 1 year Transaction</a>
+                    <a href="#" id="xx">Last 3 year Transaction</a>
+                </div>
+            </div> 
         </div>
         
     </header>
 
     <script>
-        var tablinks=document.getElementsByClassName("tab-btn");
-        var tabcontents=document.getElementsByClassName("d");
+        var cont=document.getElementsByClassName("d");
         function opentab(tabname)
         {
-            for(tablink of tablinks){
-                tablink.classList.remove("active");
-            }
-            for(tabcontent of tabcontents){
+            for(tabcontent of cont){
                 tabcontent.classList.remove("activess");
             }
-            event.currentTarget.classList.add("active");
             document.getElementById(tabname).classList.add("activess");
         }
-
     </script>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-btn");
+    var tabcontents=document.getElementsByClassName("details");
+    function openopt(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active");
+    }
+</script>
+
+
 </body>
 </html>
