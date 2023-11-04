@@ -119,3 +119,44 @@ h2{
 .coll a:hover{
     color: var(--main-color);
 }
+
+
+.tab-btn{
+    color: var(--white);
+    font-size: large;
+    font-weight: var(--fw-700);
+    padding: 7px 15px;
+    border-radius: 50px;
+    transition: var(--transition-1);
+  }
+
+  .tab-btn.active{ background-color: var(--main-color);}
+
+  .details{
+    display: none;
+  }
+  .details.active{
+    display: grid;
+  }
+
+
+.contentsofaccounts{
+    display: flex;
+    justify-content: center;
+    padding-right: 150px;
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+
+
+#xx{
+    color: black;
+    padding-right: 30px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.contentsofaccounts a:hover{
+    background-color: var(--main-color);
+}
